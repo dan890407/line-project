@@ -1,15 +1,14 @@
 import os
 import re
-path='C://Users//dan//Desktop//123//texts//'
-files=os.listdir(path)
+import shutil
+path='./texts//'
+files=os.listdir('./texts//unprocess//')
 n=0 
 for i in files: 
-  oldname=path+files[n] 
-  newname=oldname.replace('.txt','')
-  newname=newname+'_new.txt'
-  os.rename(oldname,newname) 
-  print(oldname+'>>>'+newname) 
-  n=n+1
+  oldname=path+'unprocess//'+files[n]
+  newname='./texts//processed//'+files[n]
+  shutil.copy(oldname,newname)
+  n+=1
 
 
 
