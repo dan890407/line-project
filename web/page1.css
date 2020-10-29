@@ -1,0 +1,54 @@
+body{
+background : white;
+margin: 0;
+padding: 0;
+font-family: Microsoft JhengHei;
+}
+.icon {
+font-size: 40px;
+
+}
+.graph .block{
+    display: block;
+    width: 48%;
+    height: 600px;
+}
+.graph{
+      display:flex;
+      justify-content:space-around;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    top: 0px;
+    left: 0px;
+}
+.container .tex{
+  display :inline-flex;
+  justify-content: center;
+  width: 50vw;
+}
+.container .tex1{
+  display :inline-flex;
+  justify-content: center;
+  width: 50vw;
+}
+.container a{
+  text-decoration: none;
+  color: black;
+}
+.container li:hover{
+  background: #273c75;
+  color : white;
+}
+.container  li{
+display:block;
+background: #f5f6fa;
+width: 200px;
+border-radius: 24px;
+text-align: center;
+padding: 10px 5px;
+margin-bottom: 30px;
+transition: 0.25s;
+}
